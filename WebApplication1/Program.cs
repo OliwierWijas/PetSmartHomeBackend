@@ -23,6 +23,7 @@ var app = builder.Build();
 app.UseRouting();
 app.UseCors("AllowAll");
 app.MapHub<VideoHub>("/videoHub");
+app.MapHub<NotificationHub>("/notificationHub");
 app.MapControllers();
 
 // Configure the HTTP request pipeline.
